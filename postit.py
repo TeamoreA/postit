@@ -1,20 +1,21 @@
 """ Postit.py 
-all_comments = {
-    int : {
-        "author" : str,
-        "message" : str,
-        "datetime" : str
+Attributes:
+    all_comments = {
+        int : {
+            "author" : str,
+            "message" : str,
+            "datetime" : str
+        }
     }
-}
 """
 import datetime
 
-all_posts = {}
+all_comments = {}
 
 class UsersOps():
     def __init__(self):
         self.login_status = False
-        self.logged_in_at = None      
+        self.logged_in_at = None    
 
     def login(self, username, password):
         # simple regex
@@ -36,7 +37,12 @@ class UsersOps():
 
 
 class ModeratorOps(UsersOps):
-    pass
+    def edit_comment(self, comment_id):
+        pass
+    
+    def edit_comment(self, comment_id):
+        pass
+
 
 class AdminOps(ModeratorOps):
     pass
