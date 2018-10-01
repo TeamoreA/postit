@@ -1,15 +1,19 @@
 import unittest
+from postit import UsersOps
 
 class TestUserOps(unittest.TestCase):
+    def setUp():
+        sample_user = UsersOps() 
+
     def test_users_can_log_in(self):
-        pass
+        sample_user.login
 
     def test_users_can_log_out(self):
         pass
 
     def test_for_timestamp_when_user_logs_in(self):
         pass
-        
+
     def test_that_users_can_edit_their_own_comments(self):
         pass
 
